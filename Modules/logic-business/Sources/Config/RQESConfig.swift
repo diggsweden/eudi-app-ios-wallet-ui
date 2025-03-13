@@ -43,6 +43,14 @@ final class RQESConfig: EudiRQESUiConfig {
           scaURL: "https://walletcentric.signer.eudiw.dev"
         )
       ]
+    case .DIGG:
+      [
+        .init(
+          name: "Wallet-Centric",
+          uri: URL(string: "https://walletcentric.signer.eudiw.dev/csc/v2")!,
+          scaURL: "https://walletcentric.signer.eudiw.dev"
+        )
+      ]
     }
   }
 
@@ -60,6 +68,13 @@ final class RQESConfig: EudiRQESUiConfig {
           hashAlgorithm: .SHA256
         )
     case .DEMO:
+        .init(
+          clientId: "wallet-client",
+          clientSecret: "somesecret2",
+          authFlowRedirectionURI: "rqes://oauth/callback",
+          hashAlgorithm: .SHA256
+        )
+    case .DIGG:
         .init(
           clientId: "wallet-client",
           clientSecret: "somesecret2",

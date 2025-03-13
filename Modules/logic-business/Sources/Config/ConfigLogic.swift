@@ -21,7 +21,7 @@ public enum AppBuildType: String, Sendable {
 }
 
 public enum AppBuildVariant: String, Sendable {
-  case DEMO, DEV
+  case DEMO, DEV, DIGG
 }
 
 public protocol ConfigLogic: Sendable {

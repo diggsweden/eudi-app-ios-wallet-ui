@@ -1,0 +1,4 @@
+BUILD_TYPE = DEBUG
+BUILD_VARIANT = DIGG
+//WALLET_HOST_URL =
+CHANGELOG_URL =  https:/$()/github.com/eu-digital-identity-wallet/eudi-app-ios-wallet-ui/releases

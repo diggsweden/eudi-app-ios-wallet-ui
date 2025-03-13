@@ -73,6 +73,12 @@ struct WalletKitConfigImpl: WalletKitConfig {
 
   var vciConfig: VciConfig {
     return switch configLogic.appBuildVariant {
+    case .DIGG:
+        .init(
+          issuerUrl: "https://wallet.sandbox.digg.se",
+          clientId: "1234567891",
+          redirectUri: URL(string: "eu.europa.ec.euidi://authorization")!
+        )
     case .DEMO:
         .init(
           issuerUrl: "https://issuer.eudiw.dev",
